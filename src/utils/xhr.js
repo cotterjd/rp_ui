@@ -1,7 +1,7 @@
 const log = console.log
 
 export function getData(filters = []) {
-  return fetch('http://localhost:8080/launches', {
+  return fetch(`${process.env.REACT_APP_API_URL}/launches`, {
     method: 'POST'
   , body: JSON.stringify({ filters })
   , headers: {
