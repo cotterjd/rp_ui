@@ -2,13 +2,14 @@ import React from 'react'
 import {ItemContainer, LinkImg} from './styled'
 import * as R from 'ramda'
 
-const log = console.log
+const log = console.log // eslint-disable-line
 , cutoff = 68
 ;
 export function Item({data}) {
+    const defaultBadge = require('../../assets/images/placeholder.png')
 		return (
 			<ItemContainer>
-        <img width="50px" src={require('../../assets/images/placeholder.png')} alt="launch icon" />
+        <img width="35px" src={data.mission_patch_small || defaultBadge} alt="launch icon" />
         <span>{data.rocket_name}</span>
         <span>{data.rocket_type}</span>
         <span>{formatDate(data.launch_date)}</span>

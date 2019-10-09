@@ -64,6 +64,11 @@ export const RefreshIcon = styled.img`
     border-radius: 50%;
     padding: 5px;
 
+    transition: all .2s ease-in-out;
+    :hover {
+      transform: scale(1.1);
+      background-color: ${darkGrayColor};
+    }
 
     ${props => props.loading
       ? `

@@ -34,7 +34,7 @@ function App() {
 			<Title>SpaceX Launches</Title>
 			<TableHeader>
 				<Filters>
-					<RefreshIcon loading={loading} src={refreshImg} alt="refresh icon" />
+					<RefreshIcon onClick={refreshData} loading={loading} src={refreshImg} alt="refresh icon" />
 					<div className="filters">
 					  <Filter name="Land Success" {...filterProps} />
 					  <Filter name="Reused"  {...filterProps}/>

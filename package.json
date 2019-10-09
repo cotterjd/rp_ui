@@ -1,7 +1,7 @@
 {
   "name": "ui-for-local-development",
   "version": "0.1.0",
-  "homepage": "http://cotterjd.github.io/rp_ui",
+  "homepage": "http://space-x.cotterslist.com",
   "private": true,
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
