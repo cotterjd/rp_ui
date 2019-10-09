@@ -12,7 +12,7 @@
     "build": "npm-run-all build-css build-js",
     "push": "git push origin $(git branch | grep \\* | cut -d ' ' -f2)",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "echo space-x.cotterslist.com > build/CNAME && node deploy.js"
   },
   "dependencies": {
     "autoprefixer": "7.1.6",
