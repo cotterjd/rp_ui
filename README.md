@@ -3,8 +3,7 @@ frontend for <a href="https://github.com/cotterjd/RP_assessment">R&amp;P's full-
 
 ## Run Locally
 
-`npm install`
-`npm start`
+`npm install && npm start`
 
 ## Deploy
 
