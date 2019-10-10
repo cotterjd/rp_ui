@@ -9,10 +9,12 @@ export function getData(filters = []) {
     }
   })
   .then(r => r.json())
-  .then(r => {
-    const result = JSON.parse(r)
+  .then(result => {
+    if (process.env.NODE_ENV === 'development') {
+      result = JSON.parse(result) // TODO: resolve this nonsense
+    }
     if (!result.data) {
-      handleError(r.errors)
+      handleError(result.errors)
       return mockData()
     } else return result.data.launches || []
   })
