@@ -10,9 +10,6 @@ export function getData(filters = []) {
   })
   .then(r => r.json())
   .then(result => {
-    if (process.env.NODE_ENV === 'development') {
-      result = JSON.parse(result) // TODO: resolve this nonsense
-    }
     if (!result.data) {
       handleError(result.errors)
       return mockData()
