@@ -12,7 +12,7 @@
     "build": "npm-run-all build-css build-js",
     "push": "npm run pull && git push origin $(git branch | grep \\* | cut -d ' ' -f2)",
     "pull": "git pull origin $(git branch | grep \\* | cut -d ' ' -f2)",
-    "predeploy": "npm run build",
+    "predeploy": "npm-run-all push build",
     "deploy": "echo space-x.cotterslist.com > build/CNAME && node deploy.js"
   },
   "dependencies": {
