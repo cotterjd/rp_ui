@@ -1,5 +1,5 @@
 # rp_ui
-frontend for <a href="https://github.com/cotterjd/RP_assessment">R&amp;P's full-stack assessment</a>
+frontend for <a href="https://github.com/cotterjd/RP_assessment">R&amp;P's full-stack assessment</a> (no longer live)
 
 ## Run Locally
 <a href="https://github.com/cotterjd/RP_assessment/blob/master/README.md#user-content-run-locally">start backend</a><br />
